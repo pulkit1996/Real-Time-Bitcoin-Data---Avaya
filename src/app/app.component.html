@@ -1,0 +1,19 @@
+<h1>Visualizing real-time Bitcoin trading data in a web application</h1>
+
+<h2>Average sum of Data : {{sumdata()}}</h2>
+
+<table id="data">
+    <tr>
+      <th>Transaction ID</th>
+      <th>Amounts</th>
+      <th>Prices</th>
+      <th>Timestamp</th>
+    </tr>
+    <tr *ngFor="let trade of trades">    
+      <td>{{trade.id}}</td>
+      <td>{{trade.amount}}</td>
+      <td>{{trade.price}}</td>
+      <td>{{trade.timestamp}}</td>
+    </tr>
+  </table>
+
